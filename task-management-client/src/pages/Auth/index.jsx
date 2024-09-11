@@ -4,7 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 export default function Auth() {
   const { token } = useParams(); // Extract token from URL parameters
   const navigate = useNavigate(); // For programmatic navigation
-
+console.log({token})
   
   useEffect(() => {
     if (token) {
